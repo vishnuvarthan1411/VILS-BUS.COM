@@ -29,11 +29,12 @@ services:
         value: 2.0.0
 
   # ─── FRONTEND STATIC SITE ─────────────────────────────────
-  - type: staticSite
+  - type: web
+    runtime: static
     name: vils-bus-frontend
     rootDir: frontend
     buildCommand: npm install && npm run build
-    publishDir: dist
+    staticpublishPath: dist
     routes:
       - type: rewrite
         source: /*
