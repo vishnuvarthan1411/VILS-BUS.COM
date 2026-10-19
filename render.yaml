@@ -34,7 +34,7 @@ services:
     name: vils-bus-frontend
     rootDir: frontend
     buildCommand: npm install && npm run build
-    staticpublishPath: dist
+    staticPublishPath: dist
     routes:
       - type: rewrite
         source: /*
